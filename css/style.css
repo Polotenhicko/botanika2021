@@ -4,6 +4,11 @@ body {
   padding: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 body {
   font-family: 'Playfair Display';
   font-size: 16px;
@@ -11,11 +16,15 @@ body {
   background-color: #fff;
   padding-top: 26px;
   color: #ae7c78;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content,
 .header-content {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-links {
@@ -23,6 +32,7 @@ body {
   list-style: none;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
 }
 
 .header-item {
@@ -33,4 +43,68 @@ body {
   border-bottom: 1px solid #ae7c78;
   border-top: 1px solid #ae7c78;
   height: 64px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  margin-top: 82px;
+  height: 463px;
+}
+
+.catalog {
+  max-width: 384px;
+  margin-right: 23px;
+}
+
+.catalog .catalog-button {
+  font-family: 'Montserrat';
+  background: #d89999;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px 70px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.catalog-image {
+  display: flex;
+}
+
+.catalog-image-1 {
+  width: 386px;
+  height: 404px;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.catalog-image-2 {
+  width: 387px;
+  height: 420px;
+}
+
+.catalog-image img {
+  border-radius: 10px;
+}
+
+/* .catalog-image-wrapper .catalog-image:first-child {
+  margin-right: 20px;
+} */
+
+.catalog-title {
+  font-size: 44px;
+  line-height: 59px;
+  margin-bottom: 24px;
+}
+
+.catalog-desc {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 64px;
+}
+
+.italic {
+  font-style: italic;
 }
