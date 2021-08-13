@@ -1,5 +1,36 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  max-width: 1440px;
+  background-color: #fff;
+  padding-top: 26px;
+  color: #ae7c78;
+}
+
+.content,
+.header-content {
+  max-width: 1200px;
+}
+
+.header-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-item {
+  line-height: 20px;
+}
+
+.header {
+  border-bottom: 1px solid #ae7c78;
+  border-top: 1px solid #ae7c78;
+  height: 64px;
 }
