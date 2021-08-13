@@ -4,6 +4,16 @@ body {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -159,6 +169,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .popular-name {
@@ -216,4 +227,112 @@ body {
 
 .popular-arrows svg:first-child {
   margin-right: 20px;
+}
+
+.sections {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 80px;
+}
+
+.sections > .element:nth-child(1) {
+  background: url(../img/element-1.jpg) no-repeat;
+  width: 387px;
+  height: 442px;
+  position: relative;
+}
+
+.sections > .element:nth-child(2) {
+  background: url(../img/element-2.jpg) no-repeat;
+  width: 387px;
+  height: 442px;
+  position: relative;
+}
+
+.sections > .element:nth-child(3) {
+  background: url(../img/element-3.jpg) no-repeat;
+  width: 387px;
+  height: 442px;
+  position: relative;
+}
+
+.sections > .element > .color-cratch {
+  background-color: rgba(174, 124, 120, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.sections > .element > .element-text {
+  color: #fff;
+  z-index: 11;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sections .element-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.sections .element-desc {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.banner {
+  margin-bottom: 80px;
+  max-height: 391px;
+  font-size: 0;
+  display: flex;
+}
+
+.banner > .banner-wrapper {
+  width: 610px;
+  height: 391px;
+  background-color: #ae7c78;
+  display: inline-block;
+}
+
+.banner-wrapper > .banner-text {
+  max-width: 387px;
+  color: #fff;
+  padding: 40px 20px 64px 102px;
+}
+
+.banner-title {
+  font-family: 'Playfair Display';
+  font-size: 44px;
+  line-height: 59px;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+
+.banner-desc {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.banner-picture {
+  width: 590px;
+  height: 391px;
+  background-image: url(../img/banner.jpg);
+  display: inline-block;
 }
