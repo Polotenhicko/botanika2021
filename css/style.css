@@ -491,9 +491,6 @@ body {
   margin-right: auto;
 }
 
-.map > ymaps {
-}
-
 .map .map-content {
   position: absolute;
   top: 52px;
