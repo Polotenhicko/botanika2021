@@ -271,28 +271,38 @@ body {
   margin-bottom: 80px;
 }
 
-.sections > .element:nth-child(1) {
-  background: url(../img/element-1.jpg) no-repeat;
+.sections .element:nth-child(1) {
+  background: url(../img/element-1.jpg) center no-repeat;
   width: 387px;
   height: 442px;
   position: relative;
 }
 
-.sections > .element:nth-child(2) {
-  background: url(../img/element-2.jpg) no-repeat;
+.sections .element:nth-child(2) {
+  background: url(../img/element-2.jpg) center no-repeat;
   width: 387px;
   height: 442px;
   position: relative;
 }
 
-.sections > .element:nth-child(3) {
-  background: url(../img/element-3.jpg) no-repeat;
+.sections .element:nth-child(3) {
+  background: url(../img/element-3.jpg) center no-repeat;
   width: 387px;
   height: 442px;
   position: relative;
 }
 
-.sections > .element > .color-cratch {
+.content .sections .element:hover {
+  cursor: pointer;
+  background-size: 130%;
+}
+
+.content .sections .element {
+  transition: background-size 0.5s ease;
+  background-size: 100%;
+}
+
+.sections .element .color-cratch {
   background-color: rgba(174, 124, 120, 0.6);
   width: 100%;
   height: 100%;
@@ -302,7 +312,7 @@ body {
   z-index: 10;
 }
 
-.sections > .element > .element-text {
+.sections .element .element-text {
   color: #fff;
   z-index: 11;
   position: absolute;
