@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -31,7 +32,8 @@ body {
 }
 
 .content,
-.header-content {
+.header-content,
+.footer-wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -335,4 +337,237 @@ body {
   height: 391px;
   background-image: url(../img/banner.jpg);
   display: inline-block;
+}
+
+.steps {
+  margin-bottom: 80px;
+}
+
+.steps-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.steps-wrapper {
+  font-size: 0;
+  display: flex;
+  text-align: start;
+}
+
+.steps .step {
+  font-family: 'Montserrat';
+  text-align: center;
+  display: inline-block;
+  max-width: 285px;
+}
+
+.steps .step:not(:last-child) {
+  margin-right: 20px;
+}
+
+.steps .step *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.steps .step .step-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.steps .step .step-desc {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.news {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.news-content > *:not(:last-child) {
+  margin-bottom: 40px;
+  max-width: 387px;
+}
+
+.news-content .news-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+}
+
+.news-content .news-desc {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.news-content .social-links a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.news .news-img {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    'news-2 news-1'
+    'news-3 news-1';
+  margin-left: auto;
+}
+
+.news-img img:nth-child(1) {
+  grid-area: news-1;
+  width: 387px;
+  height: 460px;
+}
+
+.news-img img:not(:first-child) {
+  width: 285px;
+  height: 220px;
+}
+
+.news-img img:nth-child(2) {
+  grid-area: news-2;
+}
+
+.news-img img:nth-child(3) {
+  grid-area: news-3;
+}
+
+.reviews {
+  border: 1px solid #ae7c78;
+  padding: 40px 40px 63px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.reviews .reviews-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+
+.reviews .reviews-wrapper {
+  font-size: 0;
+}
+
+.reviews .reviews-content {
+  max-width: 300px;
+  font-family: 'Montserrat';
+  display: inline-block;
+}
+
+.reviews .reviews-content:not(:last-child) {
+  margin-right: 105px;
+}
+
+.reviews-content .review {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.reviews-content .review-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.map {
+  position: relative;
+  width: 1200px;
+  height: 644px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map > ymaps {
+}
+
+.map .map-content {
+  position: absolute;
+  top: 52px;
+  left: 222px;
+  background: #f7fafc;
+  box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+  border-radius: 12px;
+  padding: 40px 105px 65px 35px;
+}
+
+.map .map-content .map-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 42px;
+}
+
+.map-content .map-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.map-info-topic .info-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-bottom: 13px;
+}
+
+.map-info-topic .info-text {
+  max-width: 243px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.map-info .map-info-topic:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.footer {
+  background-color: #ae7c78;
+  height: 100%;
+  padding: 30px 0 40px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  color: #fff;
+  grid-template-columns: 5fr 4fr 4fr 4fr 4fr 5fr;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 0;
+}
+
+.footer-links .footer-link {
+  justify-self: center;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 20px;
+}
+/* 
+.footer-links .footer-link:first-child {
+  margin-right: 103px;
+}
+*/
+.footer-links .footer-social {
+  margin-left: auto;
+}
+
+.footer-social .social-links a:not(:last-child) {
+  margin-right: 20px;
 }
