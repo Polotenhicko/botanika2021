@@ -195,6 +195,10 @@ body {
   text-align: center;
 }
 
+.popular-content {
+  text-align: left !important;
+}
+
 .popular-item {
   font-family: 'Montserrat';
 }
@@ -202,6 +206,11 @@ body {
 .popular-product {
   display: flex;
   margin-bottom: 25px;
+}
+
+.popular-product > img {
+  max-width: 387px;
+  height: 438px;
 }
 
 .popular-item .item-title {
@@ -237,12 +246,21 @@ body {
   line-height: 20px;
 }
 
-.popular-arrows svg {
+.popular-arrow-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.popular-arrow:not(:last-child) {
+  margin-right: 20px;
+}
+
+.popular-arrow svg {
   cursor: pointer;
 }
 
 .popular-arrows svg:first-child {
-  margin-right: 20px !important;
+  /* margin-right: 20px !important; */
 }
 
 .sections {
@@ -571,11 +589,7 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-/* 
-.footer-links .footer-link:first-child {
-  margin-right: 103px;
-}
-*/
+
 .footer-links .footer-social {
   margin-left: auto;
 }
@@ -609,19 +623,6 @@ body {
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.popular-swiper {
-  width: 387px;
-  height: 438px;
-  object-fit: cover;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   position: relative !important;
@@ -630,4 +631,10 @@ body {
   height: 16px !important;
   z-index: 11 !important;
   margin: 0 !important;
+}
+
+svg.swiper-button-disabled {
+  opacity: 1 !important;
+  cursor: pointer !important;
+  pointer-events: visibleFill !important;
 }
