@@ -259,10 +259,6 @@ body {
   cursor: pointer;
 }
 
-.popular-arrows svg:first-child {
-  /* margin-right: 20px !important; */
-}
-
 .sections {
   margin-left: auto;
   margin-right: auto;
