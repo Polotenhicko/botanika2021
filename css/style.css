@@ -267,21 +267,21 @@ body {
   margin-bottom: 80px;
 }
 
-.sections .element:nth-child(1) {
+.sections a:nth-child(1) .element {
   background: url(../img/element-1.jpg) center no-repeat;
   width: 387px;
   height: 442px;
   position: relative;
 }
 
-.sections .element:nth-child(2) {
+.sections a:nth-child(2) .element {
   background: url(../img/element-2.jpg) center no-repeat;
   width: 387px;
   height: 442px;
   position: relative;
 }
 
-.sections .element:nth-child(3) {
+.sections a:nth-child(3) .element {
   background: url(../img/element-3.jpg) center no-repeat;
   width: 387px;
   height: 442px;
@@ -293,7 +293,7 @@ body {
   background-size: 130%;
 }
 
-.content .sections .element {
+.content .sections a .element {
   transition: background-size 0.5s ease;
   background-size: 100%;
 }
